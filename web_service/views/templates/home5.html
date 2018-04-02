@@ -1,0 +1,5 @@
+{% for item in dict_home5 %}
+    {{ item }}{% if not forloop.last %}我是逗号{% endif %}
+{% endfor %}
+
+<a href="{{ request.path }}?{{ request.GET.urlencode }}&delete=1">当前网址加参数 delete</a>

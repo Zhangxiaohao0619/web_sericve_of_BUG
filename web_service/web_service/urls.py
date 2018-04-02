@@ -20,10 +20,13 @@ from views import views as learn_views  # new
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', learn_views.index),  # new
+    #path('', learn_views.index),  # new
     path('add/', learn_views.add , name ="add"),
     path('add2/<int:a>/<int:b>/', learn_views.add2 , name = "add2"),
     path('home/', learn_views.home , name = "home"),
     path("home2/", learn_views.home2 , name = "home2"),
     path("home3/", learn_views.home3 , name = "home3"),
+    path("home4/", learn_views.home4 , name = "home4"),
+    path("home5/" , learn_views.home5 , name = "home5"),
+    path("index/" , learn_views.index , name = "index"),
 ]
