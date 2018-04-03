@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from views import views as learn_views  # new
+from views import views as learn_views
+from login import views as login_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +30,7 @@ urlpatterns = [
     path("home4/", learn_views.home4 , name = "home4"),
     path("home5/" , learn_views.home5 , name = "home5"),
     path("index/" , learn_views.index , name = "index"),
+#login_views
+    path("login/" , login_views.login , name = "login"),
+ #   path(r'^accounts/', learn_views('users.urls')),
 ]

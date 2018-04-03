@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'views',
     'news',
     'tools',
+    'login',
+ #   'users',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
